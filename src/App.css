@@ -22,6 +22,31 @@
   border-bottom: 1px solid var(--border-color);
   height: var(--header-height);
   width: 100%;
+  padding-left: 12px;
+}
+
+.sidebar-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.sidebar-toggle:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: flex;
+  }
 }
 
 .header-actions {
