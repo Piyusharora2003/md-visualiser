@@ -14,19 +14,23 @@ export default defineConfig({
         short_name: 'MD Workspace',
         description: 'Premium Offline-first Markdown Previewer',
         theme_color: '#0f1115',
+        background_color: '#0f1115',
+        display: 'standalone',
+        start_url: '/',
+        id: '/',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: '/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
+            src: '/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
+            src: '/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'
